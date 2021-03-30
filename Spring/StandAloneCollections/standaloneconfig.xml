@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xmlns:p = "http://www.springframework.org/schema/p"
+   xmlns:util = "http://www.springframework.org/schema/util"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd
+   http://www.springframework.org/schema/util
+   http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+   
+  <util:list list-class="java.util.LinkedList" id="myll">
+  <value>q</value>
+  <value>qw</value>
+  <value>qwe</value>
+  <value>qwer</value>  
+  </util:list>
+  
+  <util:map map-class="java.util.HashMap" id="myhm">
+  <entry key="abc" value="34"></entry>
+  <entry key="xyz" value="323"></entry>
+  </util:map>
+  
+  <util:properties id="myp">
+  <prop key="abc">ABC</prop>
+  <prop key="xyz">xyz</prop>
+  </util:properties>
+  
+  <bean class="com.StandAloneCollection.NameList" name="mybean" p:name-ref="myll" p:var-ref="myhm" p:p-ref="myp">
+ <!--  <property name="name">
+  <ref bean="myll"/>
+  </property> -->
+  </bean>
+
+  
+   </beans> 

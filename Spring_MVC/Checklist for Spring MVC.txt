@@ -1,0 +1,10 @@
+
+
+
+Checklist for Spring MVC
+
+Configure the dispatcher servlet in web.xml
+Create spring configuration file
+Configure view resolver
+create controller
+Create a view to show page
